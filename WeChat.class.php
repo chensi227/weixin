@@ -287,7 +287,7 @@ XML
 			// https相关：是否对服务器的ssl验证
 			curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
 			// https相关：ssl主机验证方式
-			curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 2);
+			curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 1);
 		}
 		if ($type == 'POST') {// post请求
 			curl_setopt($curl, CURLOPT_POST, true);
